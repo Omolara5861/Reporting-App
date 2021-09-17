@@ -60,6 +60,11 @@ textarea::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 
+select {
+    padding: 6px 15px;
+    outline: 0;
+}
+
 .border {
     border: 4px solid #e7e7e7;
 }
