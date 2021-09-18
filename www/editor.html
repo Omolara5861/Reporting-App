@@ -18,25 +18,33 @@
     </div>
     
     <div class="blog">
-        <textarea type="text" class="title border" placeholder="Report title..."></textarea>
-        <label for="categories">Choose a Category:</label>
-        <select id="categories" name="categories" size="1" class="border">
-        <option value="accidents">Accidents</option>
-        <option value="fighting">Fighting</option>
-        <option value="rioting">Rioting</option>
-        <option value="other">Other</option>
-        </select>
-        <textarea type="text" class="article border" placeholder="Start writing here..."></textarea>
+        <form method="POST" action="https://pressor-lubrication.000webhostapp.com/newincident.php">
+        <textarea type="text" name="title" class="title border" placeholder="Report title..."></textarea>
+        <label for="category">Choose a Category:</label>
+        <select id="category" name="category" size="1" class="border">
+        <option value="1">Accidents</option>
+        <option value="2">Fighting</option>
+        <option value="3">Rioting</option>
+        <option value="4">Other</option>
+    </select>
+        <textarea type="text" name="description" class="article border" placeholder="Start writing here..."></textarea>
+
+
+        </form>
     </div>
 
     <div class="blog-options">
-        <button class="btn dark publish-btn">publish</button>
+        <button type="submit" class=" btn dark publish-btn">publish</button>
         <input type="file" accept="image/*" id="image-upload" hidden>
         <label for="image-upload" class="btn grey upload-btn">Upload Image Of The Incident</label>
     </div>
 
     
     <script src="/www/js/editor.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="/js/firebase.js"></script>
 
 </body>
 </html>

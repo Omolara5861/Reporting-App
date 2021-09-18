@@ -120,6 +120,35 @@ body{
     line-height: 30px;
 }
 
+.widget {
+    text-align: center;
+}
+
+.widget ul.list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.widget ul.list li {
+    line-height: 2.8rem;
+}
+
+.widget ul.list li a {
+    color: #203656;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.widget ul.list li a:hover {
+    color: #703648;
+}
+
 .btn.dark{
     background: #1b1b1b;
     color: #fff;
@@ -161,5 +190,9 @@ body{
         
         .heading .small{
             font-size: 45px;
+        }
+
+        .widget ul.list {
+            flex-wrap: wrap;
         }
         }
